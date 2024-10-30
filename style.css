@@ -1,0 +1,161 @@
+
+body {
+  
+  background-image: url("bgg.jpg");
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+  background-position: center; 
+  font-family: 'Inter', sans-serif; 
+}
+
+nav {
+  width: 100%;
+  background-color: #1e40af; 
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+nav h1 {
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#greeting {
+  margin-top: 2rem;
+  font-size: 1.5rem; 
+  color: #2d3748;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Style untuk Sidebar */
+.sidebar {
+  background: linear-gradient(135deg, #a8c6ee, #1e40af); /* Warna gradien */
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 1rem;
+  color: #ffffff;
+  text-align: center;
+  transition: transform 0.3s ease; /* Animasi saat hover */
+}
+
+.sidebar:hover {
+  transform: translateY(-5px); /* Efek hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Style untuk judul di dalam Sidebar */
+.sidebar h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+/* Style untuk subtitle */
+.sidebar h6 {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  color: #2b0303;
+  font-weight: normal;
+}
+
+/* Style untuk teks di dalam Sidebar */
+.sidebar p {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.1); /* Background semi-transparan */
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+
+.sidebar p:hover {
+  background: rgba(0, 0, 0, 0.2); /* Efek hover pada teks */
+}
+
+/* Tambahkan border di bawah judul untuk estetika */
+.sidebar h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #ffffff;
+  margin: 0.5rem auto;
+  border-radius: 5px;
+}
+
+
+.grid {
+	width: 350px;
+	height: 350px;
+	display: grid;
+	position: relative;
+}
+
+
+
+.grid__item {
+  border: 1px solid #0e1238; 
+ 
+}
+
+.for-tts{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.for-tts::-webkit-input-placeholder { 
+vertical-align: top;
+  text-align: left;
+        
+}
+.for-tts:-moz-placeholder { 
+  line-height: 1.5em;
+    color: red
+}
+.for-tts::-moz-placeholder { 
+  line-height: 1.5em;
+    color: rgb(65, 39, 39)
+}
+.for-tts:-ms-input-placeholder { 
+  line-height: 1.5em;
+}
+
+
+.salah {
+    font-weight: bold;
+    color: red;
+}
+
+.benar {
+    color: green;
+}
+
+/* Style sebelumnya tetap sama */
+
+/* Responsif untuk layar lebih kecil, termasuk tata letak skor */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(10, 1fr); /* 4 kolom untuk layar lebih kecil */
+  }
+
+  .sidebar {
+    max-width: 250px;
+  }
+
+  .sidebar h2,
+  .sidebar h6 {
+    font-size: 0.95rem;
+  }
+
+  .sidebar p {
+    font-size: 1.3rem;
+  }
+}

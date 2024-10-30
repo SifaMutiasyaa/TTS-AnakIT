@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TTS-AnakIT</title>
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <h1>Teka-Teki Silang Anak IT</h1>
+    </nav>
+    <div class="mt-8 text-center">
+        <h1 id="greeting" style="color: #ffffff; text-shadow: 1px 1px 6px rgba(0,0,0,0.3); font-family: 'Courier New', monospace;">Welcome to Our Library!</h1>
+    </div>
+    <div class="container mt-6">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="sidebar">
+                    <h2>SCORE</h2>
+                    <p id="skor">0</p>
+
+                    <div class="col text-center spasi-bawah">
+                        <button class="btn btn-success mr-2" id="btn_cek">Cek Jawaban</button>
+                        <button class="btn btn-danger mt-2" id="btn_show_answers">Nyerah</button>
+                        <button class="btn btn-primary mt-2" id="btn_reset">Ulang TTS</button>
+
+                    </div>
+                
+                </div>
+            </div>
+            <div class="col-lg-6 grid-container">
+                <div class="grid" id="puzzle-grid"></div>
+            </div>
+            <div class="col-lg-3">
+                <div class="sidebar">
+                    <h6><u><b>Mendatar</b></u></h6>
+                    <div id="mendatar" class="text-dark"></div>
+
+                    <h6 class="mt-6"><u><b>Menurun</b></u></h6>
+                    <div id="menurun" class="text-dark"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+<script>
+   
+</script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script src="question_lists.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
